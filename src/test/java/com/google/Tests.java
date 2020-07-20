@@ -9,7 +9,6 @@ public class Tests extends WebDriverSettings {
     public void checkTitle(){
         chromeDriver.get("https://www.google.com/");
         String titleGoogle = chromeDriver.getTitle();
-        System.out.println(titleGoogle);
         Assertions.assertTrue(titleGoogle.contains("Google"),"Название страницы не соответствует искомому");
     }
 
