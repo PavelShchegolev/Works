@@ -11,8 +11,8 @@ public class WebDriverSettings {
     WebDriver chromeDriver;
     @BeforeEach
     public void setupSettings(){
-        System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
-        //System.setProperty("webdriver.chrome.driver",System.getenv("CHROME_DRIVER"));
+        //System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",System.getenv("CHROME_DRIVER"));
         chromeDriver = new ChromeDriver();
         chromeDriver.manage().window().maximize();
         chromeDriver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);

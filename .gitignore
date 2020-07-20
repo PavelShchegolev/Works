@@ -5,5 +5,4 @@ build/
 log/
 target/
 
-local.properties
 *.iml
